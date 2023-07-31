@@ -28,9 +28,7 @@ export const useFormData = () => {
     const {
         register,
         handleSubmit,
-        setValue,
         setError,
-        watch,
         control,
         formState: { errors },
     } = useForm<FormProps>({
@@ -40,9 +38,7 @@ export const useFormData = () => {
     return {
         register,
         handleSubmit,
-        setValue,
         errors,
-        watch,
         control,
     };
 };
